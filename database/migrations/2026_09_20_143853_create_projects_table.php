@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('customer')->nullable();
-            $table->date('Period');
+            $table->date('period');
+            $table->text('text');
             $table->timestamps();
         });
     }
