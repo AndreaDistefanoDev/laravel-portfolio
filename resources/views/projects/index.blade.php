@@ -2,7 +2,13 @@
 @section('title', 'My Projects')
 @section('content')
 
+
     <div class="container">
+        <div class="d-flex py-4 gap-2">
+            <a class="btn btn-outline-dark" href="{{ route('projects.create') }}">Modifica</a>
+
+            {{--  --}}
+        </div>
         <div class="row">
             @foreach ($projects as $project)
                 <div class="col">
@@ -19,10 +25,7 @@
             @endforeach
         </div>
     </div>
-    <li>{{ $project->name }}</li>
-    <li>{{ $project->customer }}</li>
-    <li>{{ $project->period }}</li>
-    <li>{{ $project->text }}</li>
+
 
 
 
